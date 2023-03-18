@@ -1,7 +1,7 @@
 <script>
 import resolve from '@rollup/plugin-node-resolve';
 
-import axios from "axios";
+import axios from 'axios';
 import { VueAwesomePaginate } from "vue-awesome-paginate";
 // import Paginate from "vuejs-paginate";
 
