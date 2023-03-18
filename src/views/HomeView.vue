@@ -11,7 +11,7 @@ import "animate.css";
       <div class="contained">
         <div class="gen">
           <div class="sect-one">
-            <h3 class="animate__animated animate__backInDown">
+            <h3 class="animate__animated animate__bounceInLeft">
            <div class="roller">
             <span id="rolltext">Hi! <br/>
              Hola! <br/>Ciao! <br/> Bonjour!<br/>Hallo!<br/>
@@ -21,10 +21,10 @@ import "animate.css";
             </h3>
 <div class="intro">
   
-  <h1 class="animate__animated animate__backInDown">
+  <h1 class="animate__animated animate__bounceInLeft">
               Frontend developer
             </h1>
-            <h3 class="animate__animated animate__backInDown">
+            <h3 class="animate__animated animate__bounceInLeft">
               based in Lagos, Nigeria
             </h3>
             <br />
@@ -38,12 +38,17 @@ import "animate.css";
 
           </div>
         </div>
-        <div class="about ">
+        <div class="aboutme">
           <h1 >About Me</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-            voluptates,
-          </p>
+          <p> Hi there, I'm <span>
+      Wonuola Alonge,
+    </span> and I'm not your typical <span>front-end developer</span>. 
+</p>
+<p>
+  I don't just build websites - I create immersive online experiences that captivate and inspire.
+</p>
+<p>To Know more about me, click on the button below.</p>
+<button><a href="./AboutView.vue">About Me</a></button>
         </div>
 
     </section>
@@ -53,6 +58,7 @@ import "animate.css";
 
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 .gen {
   display: flex;
   align-items: center;
@@ -70,6 +76,9 @@ import "animate.css";
   /* justify-content: center;
   align-items: center; */
 
+}
+h1{
+  margin: 0;
 }
 .intro{
   width: 50vw;
@@ -135,7 +144,7 @@ h3 {
 }
 button{
 position: fixed;
-/* transform: translate(-50%, -50%);    */
+/* transform: translate(-50%, -50%);    */margin: .4em;
  background:#371B58;
     border: none;
     width: 150px;
@@ -158,12 +167,12 @@ button:hover {
   
   /* transition: all .35s; */
 }
-button:hover > a{
-    color: rgb(10, 10, 10);
+button:hover >  a {
+    color: rgb(0, 0, 0);
     text-decoration: none;
     font-size: 1em;
 }
-a {
+a{
   color: #f5f5f5;
   text-decoration: none;
 }
@@ -200,17 +209,27 @@ box-shadow: 21px -11px 136px 26px rgba(120,88,166,0.71);
 }
 
 
-.about {
+.aboutme {
 display: flex;
+height: 100vh;
 justify-content: center;
-/* align-items: center; */
+align-items: center;
 margin-top: 5em;
 flex-direction: column;
 }
-.about > h1 {
+.aboutme > h1 {
+  margin:.2em 0;
   font-size: 3em;
   font-weight: 800;
   font-family: "Poppins", sans-serif;
+}
+.aboutme > p {
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  margin: .2em;
+  text-align: center;
+  width: 70%;
 }
 
 

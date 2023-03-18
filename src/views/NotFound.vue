@@ -1,6 +1,7 @@
 <template>
     <main>
-        <h1>404 - Page Not Found</h1>
+        <h1>404 - Oh no!
+            <br/>This page does not exist&#128542;.</h1>
        <div class="back">
         <router-link to="/">
         <button>
@@ -21,6 +22,7 @@
 
     h1 {
         font-size: 3rem;
+        text-align: center;
         font-weight: 700;
         color: rgb(41, 2, 61);
     }

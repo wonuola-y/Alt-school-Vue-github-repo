@@ -173,6 +173,8 @@ a{
     align-items: center;
     /* border: 2px solid red; */
     width: 100%;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
     height: 100%;
     padding: 1em;
 }
