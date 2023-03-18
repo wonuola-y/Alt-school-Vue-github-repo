@@ -1,4 +1,6 @@
 <script>
+import resolve from '@rollup/plugin-node-resolve';
+
 import axios from "axios";
 import { VueAwesomePaginate } from "vue-awesome-paginate";
 // import Paginate from "vuejs-paginate";
@@ -6,6 +8,9 @@ import { VueAwesomePaginate } from "vue-awesome-paginate";
 
 export default {
   name: "Repositories",
+  plugins: [
+    resolve(),
+  ],
   data() {
     return {
       repositories: [],

@@ -78,5 +78,11 @@ transition: all 5s ease-in;  }
 }
 
 /* The typewriter cursor effect */
+@media screen and (max-width:600px)  {
+  .about{
+    margin: 1em;
+  white-space: pre-wrap;
+  }
+}
 
 </style>
