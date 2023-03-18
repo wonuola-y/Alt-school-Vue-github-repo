@@ -1,42 +1,57 @@
 
 <script>
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import "animate.css";
 </script>
 
 <template>
   <main>
-    <section>
-      <div>
+    <section class="container">
+      <div class="contained">
         <div class="gen">
           <div class="sect-one">
             <h3 class="animate__animated animate__backInDown">
-              Hi, I'm Wonuola,
-            </h3>
+           <div class="roller">
+            <span id="rolltext">Hi! <br/>
+             Hola! <br/>Ciao! <br/> Bonjour!<br/>Hallo!<br/>
 
-            <h1 class="animate__animated animate__backInDown">
-              Lorem ipsum dolor, sit amet consectetur.
+</span>
+           </div> I'm Wonuola,
+            </h3>
+<div class="intro">
+  
+  <h1 class="animate__animated animate__backInDown">
+              Frontend developer
             </h1>
             <h3 class="animate__animated animate__backInDown">
               based in Nigeria
             </h3>
             <br />
             <button><a href="/repos">Repos</a></button>
+</div>
           </div>
-          <div class="img">
-            <img
-              src="https://images.unsplash.com/photo-1677166869710-3a030637ecb3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1229&q=80"
-              alt="img"
-            />
+      
+         <div id="slideshow">
+<div class="slide-wrapper">
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+    <div class="slide"></div>
+</div>
+         </div>
+
           </div>
         </div>
-        <div class="about">
-          <h1 class="about">About Me</h1>
+        <div class="about ">
+          <h1 >About Me</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             voluptates,
           </p>
         </div>
-      </div>
+
     </section>
    
   </main>
@@ -46,26 +61,69 @@ import "animate.css";
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;700;800&display=swap");
 .gen {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
-  border: 2px saddlebrown solid;
 
-  /* width: 90vw; */
-  /* height: 70vh; */
+}
+.roller{
+  border: 2px solid green;
+  height: 2.125rem;
+  line-height: 3.2rem;
+  position: relative;
+  overflow: hidden; 
+  width: 30%;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  
+  color: #1D3557;
+}
+.intro{
+border: #1D3557 2px solid;
+}
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slider 10s infinite;  
+}
+
+@keyframes slider {
+  0%{
+    top:0;
+  }
+  25%{
+    top: -1rem;    
+  }
+  50%{
+    top: -4rem;
+  }
+  60%
+  {
+    top: -7rem;
+  }
+  /* 85%{
+    top: -9rem;
+  } */
+  90%{
+    top: -11rem;
+  }
+  /* 75%{
+    top: -16rem;
+  }
+  90%{
+    top: -20rem;
+  }
+  100%{
+    top: -22rem;
+  } */
 }
 .img {
-  border: 2px solid rgb(119, 228, 16);
   width: 50%;
-  /* height: 50%; */
 }
 .sect-one {
-  border: 2px solid pink;
-  width: 50%;
-  /* height: 50%; */
+  width: 70%;
 }
 img {
   width: 100%;
-  /* height: 60%; */
 }
 em {
   font-style: normal;
@@ -79,17 +137,35 @@ h1 {
 h3 {
   font-size: 1.5em;
 }
-button {
-  background-color: black;
-  color: white;
-  border: 2px solid #f5f5f5;
-  border-radius: 5px;
-  padding: 0.5em 1em;
-  font-size: 1em;
-  font-weight: 700;
-  color: #000;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
+button{
+position: fixed;
+/* transform: translate(-50%, -50%);    */
+ background:#371B58;
+    border: none;
+    width: 150px;
+    position: relative;
+    padding: .3em .7em;
+    transition: .1s all;
+}
+
+button a{
+    position: relative;
+    z-index: 2;
+}
+button:hover {
+ border: 2px solid #7858A6;
+    background:white;
+    color: rgb(12, 12, 12);
+    transition: .1s all;
+  /* background: rgb(253, 247, 247); */
+    border-radius: 5px;
+  
+  /* transition: all .35s; */
+}
+button:hover > a{
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    font-size: 1em;
 }
 a {
   color: #f5f5f5;
@@ -97,25 +173,54 @@ a {
 }
 section {
   border: 2px rgb(177, 31, 31) solid;
-  width: 100vw;
+
   display: flex;
-  justify-content: center;
-}
-section > div {
-  width: 90vw;
-  display: flex;
-  border: 2px solid green;
   flex-direction: column;
   justify-content: center;
+}
+.contained {
+  /* width: 90vw; */
+  display: flex;
+  border: 2px solid green;
+  /* flex-direction: column; */
+ 
   /* align-items: center; */
-  /* margin: 1em; */
-  height: 100vh;
+  margin: 1em;
+
 }
 
-.gen {
-  border: 2px solid blue;
+
+.about {
+display: flex;
+justify-content: center;
+/* align-items: center; */
+margin-top: 5em;
+flex-direction: column;
 }
-section > .about {
-  border: 2px solid red;
+.about > h1 {
+  font-size: 3em;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+}
+
+
+@media  screen and (max-width: 600px) {
+  .gen {
+   display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .sect-one{
+    width: 100%;
+
+  }
+  .img{
+    margin:1em 0 ;
+    width: 100%;
+  }
+  .sect-one > h1{
+    font-size: 2em;
+   
+  }
 }
 </style>

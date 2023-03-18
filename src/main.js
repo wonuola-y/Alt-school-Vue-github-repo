@@ -6,6 +6,7 @@ import 'bootstrap';
 import VueAwesomePaginate from "vue-awesome-paginate";
 import "vue-awesome-paginate/dist/style.css";
 
+
 // import './assets/main.css'
 
 const app = createApp(App)
