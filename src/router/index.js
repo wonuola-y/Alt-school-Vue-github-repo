@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import NotFound from '../views/NotFound.vue'
-import Repositories from '../views/Repositories.vue'
+import Repos from '../views/Repositories.vue'
 
 
 
@@ -15,9 +15,10 @@ const router = createRouter({
     },
     {
       path: '/repos',
-      name: 'Repositories',
-      component: Repositories
+      name: 'Repos',
+      component: Repos
     },
+   
     {
       path: '/about',
       name: 'about',
