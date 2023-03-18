@@ -25,21 +25,15 @@ import "animate.css";
               Frontend developer
             </h1>
             <h3 class="animate__animated animate__backInDown">
-              based in Nigeria
+              based in Lagos, Nigeria
             </h3>
             <br />
             <button><a href="/repos">Repos</a></button>
 </div>
           </div>
       
-         <div id="slideshow">
-<div class="slide-wrapper">
-    <div class="slide"></div>
-    <div class="slide"></div>
-    <div class="slide"></div>
-    <div class="slide"></div>
-    <div class="slide"></div>
-</div>
+         <div class="hero-img">
+<img src="./IKJF2031.JPG" alt="hero-img">
          </div>
 
           </div>
@@ -62,10 +56,11 @@ import "animate.css";
 .gen {
   display: flex;
   align-items: center;
+  margin: 1em 0;
 
 }
 .roller{
-  border: 2px solid green;
+  
   height: 2.125rem;
   line-height: 3.2rem;
   position: relative;
@@ -74,11 +69,12 @@ import "animate.css";
   display: flex;
   /* justify-content: center;
   align-items: center; */
-  
-  color: #1D3557;
+
 }
 .intro{
-border: #1D3557 2px solid;
+  width: 50vw;
+  margin: 1em 0;
+
 }
 .roller #rolltext {
   position: absolute;
@@ -153,8 +149,8 @@ button a{
     z-index: 2;
 }
 button:hover {
- border: 2px solid #7858A6;
-    background:white;
+
+    background: #7858A6;
     color: rgb(12, 12, 12);
     transition: .1s all;
   /* background: rgb(253, 247, 247); */
@@ -172,8 +168,6 @@ a {
   text-decoration: none;
 }
 section {
-  border: 2px rgb(177, 31, 31) solid;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -181,12 +175,28 @@ section {
 .contained {
   /* width: 90vw; */
   display: flex;
-  border: 2px solid green;
-  /* flex-direction: column; */
- 
-  /* align-items: center; */
+
   margin: 1em;
 
+
+
+}
+.hero-img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-img > img{
+  width: 60%;
+  border-radius: 50px;
+  margin: 1em 0;
+
+}
+.hero-img > img:hover{
+  width: 62%;
+  transition: all .4s ease-in-out;
+box-shadow: 21px -11px 136px 26px rgba(120,88,166,0.71);
+ ;
 }
 
 
