@@ -14,7 +14,7 @@ export default defineConfig({
   },
   build: {
     rollupOptions: {
-      external:['/IKJF2031.JPG', 'popperjs/core']
+      external:['/IKJF2031.JPG', '@popperjs/core']
     }
   }
 })
