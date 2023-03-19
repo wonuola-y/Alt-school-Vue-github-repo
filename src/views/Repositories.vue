@@ -41,36 +41,36 @@ export default {
 </script>
 <template>
   <main>
-    <!-- <button @click="setTheme" class="theme"> change color </button> -->
     <h1>My GitHub Repositories</h1>
     <div class="card-container">
       <div class="card" v-for="repo in paginatedRepos" :key="repo.id">
-        <!-- <img src="" alt="" /> -->
         <div>
           <h3>{{ repo.name }}</h3>
           <p class="sm">{{ repo.description }}</p>
           <button><a href="{{ repo.url }}">Visit link</a></button>
         </div>
-        <!-- to do
-1. Search for nice typing or text effect for the home page.
-2. Work on the mobile view 
-3. Write about you  -->
       </div>
     </div>
 
     <div class="pagination">
-      <button class="pages" :disabled="currentPage === 1" @click="goToPage(currentPage - 1)">
+      <button
+        class="pages"
+        :disabled="currentPage === 1"
+        @click="goToPage(currentPage - 1)"
+      >
         &lt;&lt;
       </button>
       <span v-for="pageNumber in pageNumbers" :key="pageNumber">
-        <button class="pages"
+        <button
+          class="pages"
           :class="{ active: currentPage === pageNumber }"
           @click="goToPage(pageNumber)"
         >
           {{ pageNumber }}
         </button>
       </span>
-      <button class="pages"
+      <button
+        class="pages"
         :disabled="currentPage === totalPages"
         @click="goToPage(currentPage + 1)"
       >
@@ -94,7 +94,6 @@ h1 {
 }
 h3 {
   font-size: 1.2em;
-  /* color: #fff; */
 }
 #app {
   background-color: rgb(24, 24, 24);
@@ -119,15 +118,12 @@ h3 {
 
 .card {
   display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  /* border: 2px saddlebrown solid; */
+
   margin: 1em;
   border-radius: 5px;
   width: 25%;
   height: 200px;
   background: rgb(253, 247, 247);
-  /* box-shadow: 3px -6px 86px -22px rgba(79,73,73,0.75); */
   padding: 1em;
   text-transform: capitalize;
 }
@@ -171,7 +167,7 @@ a {
   height: 100%;
   padding: 1em;
 }
-.pages{
+.pages {
   background: #bd9aed;
   border: none;
   /* width: 5px; */
@@ -183,7 +179,7 @@ a {
 }
 button {
   position: fixed;
-  /* transform: translate(-50%, -50%);    */
+
   background: #371b58;
   border: none;
   width: 150px;
@@ -201,15 +197,9 @@ button:hover {
   background: white;
   color: rgb(12, 12, 12);
   transition: 0.1s all;
-  /* background: rgb(253, 247, 247); */
+
   border-radius: 5px;
-
-  /* transition: all .35s; */
 }
-
-/* button:hover{
-  color: #fff;
-} */
 
 button:hover:after {
   width: 100%;
@@ -228,17 +218,17 @@ button:hover > a {
     width: 70%;
     flex-wrap: wrap;
   }
-  .pages{
+  .pages {
     background: #bd9aed;
     border: none;
     width: 50px;
     position: relative;
     padding: 0.3em 0em;
     transition: 0.1s all;
-    margin: .5em;
+    margin: 0.5em;
     border-radius: 5px;
   }
-  .pagination{
+  .pagination {
     padding: 0;
   }
 }

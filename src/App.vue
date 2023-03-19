@@ -1,10 +1,5 @@
 <script setup>
-import { RouterLink, RouterView } from "vue-router";
-
-
-
-
-
+import {RouterLink, RouterView } from "vue-router";
 </script>
 
 <template>
@@ -23,20 +18,21 @@ import { RouterLink, RouterView } from "vue-router";
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <RouterLink  class="nav-link" aria-current="page" to="/">Home</RouterLink>
-          </li>
-          <li class="nav-item">
-            <RouterLink class="nav-link" to="/about">About</RouterLink>
-          </li>
-        
-          <li class="nav-item">
-            <RouterLink class="nav-link" to="/repos">Repos</RouterLink>
-          </li>
-        </ul>
-    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <RouterLink class="nav-link" aria-current="page" to="/"
+                >Home</RouterLink
+              >
+            </li>
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/about">About</RouterLink>
+            </li>
+
+            <li class="nav-item">
+              <RouterLink class="nav-link" to="/repos">Repos</RouterLink>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>
@@ -46,9 +42,9 @@ import { RouterLink, RouterView } from "vue-router";
 </template>
 
 <style scoped>
-nav{
+nav {
   background-color: rgb(41, 2, 61);
-position: relative;
-z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 </style>
