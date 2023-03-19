@@ -33,7 +33,7 @@ import "animate.css";
           </div>
       
          <div class="hero-img">
-<img src="./IKJF2031.JPG" alt="hero-img">
+<img src="/IKJF2031.JPG" alt="hero-img">
          </div>
 
           </div>
