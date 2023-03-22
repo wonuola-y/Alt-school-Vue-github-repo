@@ -1,8 +1,15 @@
 
 <script>
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import heroImg from '@/assets/IKJF2031.jpg'
 import "animate.css";
+
+export default {
+  data(){
+    return{
+      heroImg
+    }
+  }
+}
 </script>
 
 <template>
@@ -33,7 +40,7 @@ import "animate.css";
           </div>
       
          <div class="hero-img">
-<img src="/IKJF2031.JPG" alt="hero-img">
+<img :src="heroImg" alt="hero-img">
          </div>
 
           </div>
