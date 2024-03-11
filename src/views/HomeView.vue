@@ -2,7 +2,7 @@
 <script>
 import heroImg from '@/assets/IKJF2031.jpg'
 import "animate.css";
-
+import {RouterLink} from "vue-router"
 export default {
   data(){
     return{
