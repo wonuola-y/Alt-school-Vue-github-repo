@@ -35,7 +35,8 @@ export default {
               based in Lagos, Nigeria
             </h3>
             <br />
-            <button><a href="/repos">Repos</a></button>
+            <button> <RouterLink class="nav-link" to="/repos">Repos</RouterLink>
+</button>
 </div>
           </div>
       
